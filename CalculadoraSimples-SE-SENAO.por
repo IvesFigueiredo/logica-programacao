@@ -7,9 +7,9 @@ programa
 	funcao inicio()
 	{
 						
-		escreva("Gostaria de realizar uma operação básica? Digite o 1° número:")
+		escreva("Gostaria de realizar uma operação básica? Digite o 1° número: \n")
 		leia(num1)
-		escreva("Qual operação deseja realizar? Para somar digite 1, subtrair 2, multiplicar 3 e dividir 4,")
+		escreva("Qual operação deseja realizar? Para somar digite 1, subtrair 2, multiplicar 3 e dividir 4. \n")
 		leia(operacao) 
 
 		se (operacao == 1) {
@@ -55,9 +55,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 431; 
+ * @POSICAO-CURSOR = 300; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {resu1, 4, 18, 5};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
