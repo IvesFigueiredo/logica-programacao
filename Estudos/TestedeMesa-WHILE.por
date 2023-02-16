@@ -10,9 +10,10 @@ programa
 		
 		enquanto (x < y) {
 			x = x + 2
-			y = y + 1			
+			y = y + 1		
+			escreva(x," e ", y, "\t")
+			
 		}
-		escreva(x," e ", y)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -20,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 54; 
+ * @POSICAO-CURSOR = 97; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
