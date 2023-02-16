@@ -2,7 +2,7 @@ programa
 {
 	
 	real num1, num2, resu1
-	inteiro operacao
+	caracter operacao
 	
 	funcao inicio()
 	{
@@ -12,7 +12,7 @@ programa
 		escreva("Qual operação deseja realizar? Para somar digite 1, subtrair 2, multiplicar 3 e dividir 4. \n")
 		leia(operacao) 
 
-		se (operacao == 1) {
+		se (operacao == '+') {
 					
 		escreva("Agora digite o 2° número: \n")
 		leia(num2)
@@ -20,7 +20,7 @@ programa
 		escreva("O somatório é: ", resu1)
 		}
 		
-		se (operacao == 2) {
+		se (operacao == '-') {
 		
 		escreva("Agora digite o 2° número: \n")
 		leia(num2)
@@ -28,7 +28,7 @@ programa
 		escreva("A subtração é: ", resu1)
 		}
 		
-		se (operacao == 3) {
+		se (operacao == '*') {
 		
 		escreva("Agora digite o 2° número: \n")
 		leia(num2)
@@ -36,17 +36,19 @@ programa
 		escreva("A multiplicação é: ",resu1)
 		}
 		
-		se (operacao == 4) {
+		se (operacao == '/') {
 		
 		escreva("Agora digite o 2° número: \n")
 		leia(num2)
 		resu1=num1/num2
 		escreva("A divisão é: ", resu1)
 		}
-		
 		senao { 
 		escreva("Operação inválida")
 		}
+		
+		
+		
 	}
 }
 
@@ -55,7 +57,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 300; 
+ * @POSICAO-CURSOR = 878; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

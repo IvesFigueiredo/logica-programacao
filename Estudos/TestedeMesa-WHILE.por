@@ -1,8 +1,8 @@
 programa
-{			/*TESTE DE MESA PARA O WHILE (enquanto)*/
+{			/*TESTE DE MESA PARA O WHILE (enquanto)*/
 	
 	funcao inicio()
-	{	
+	{	
 		inteiro x, y
 		
 		x = 1
@@ -21,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 97; 
+ * @POSICAO-CURSOR = 205; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
