@@ -6,7 +6,7 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Olá, este programa é para calcular o peso ideal, qual é a sua altura em metros?\t")
+		escreva("Olá, vamos calcular o seu peso ideal\nQual é a sua altura em metros?\t")
 		leia(alt)
 
 		escreva("Qual o seu gênero? (M/F):\t")
@@ -27,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 345; 
+ * @POSICAO-CURSOR = 119; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
