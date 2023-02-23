@@ -17,9 +17,13 @@ programa
 			resul = (72.7*alt)-58
 
 			caso 'F' : 
-			resul = (62.1*alt)-44.7			
-		}
-		escreva("O seu peso ideal é:\n","\n||  ", resul," KG", "  ||\n")
+			resul = (62.1*alt)-44.7
+
+			escreva("O seu peso ideal é:\n","\n||  ", resul," KG", "  ||\n")
+		
+		caso contrario :
+			escreva("\nInformação inválida, por favor repita o processo nas condições corretas.\n")		
+			}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 119; 
+ * @POSICAO-CURSOR = 507; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
