@@ -14,22 +14,22 @@ programa
 		escolha(modo) {
 			caso '1' : 
 			calc = valor *0.9
-			escreva("\nTotal a pagar: ", calc, "\n")
+			escreva("\nTotal a pagar: ", calc, " reais\n")
 			pare
 			
 			caso '2' : 
 			calc = valor*0.85
-			escreva("\nTotal a pagar: ", calc, "\n")
+			escreva("\nTotal a pagar: ", calc, " reais\n")
 			pare
 			
 			caso '3' : 
 			calc = valor/2
-			escreva("\nO valor da parcela de duas vezes, será: ", calc, "\n")
+			escreva("\nO valor da parcela de duas vezes, será: ", calc, " reais\n")
 			pare
 			
 			caso '4' : 
 			calc = (valor*1.1)/2
-			escreva("\nO valor da parcela de duas vezes com o acréscimo de 10%: ", calc, "\n")
+			escreva("\nO valor da parcela de duas vezes com o acréscimo de 10%: ", calc, " reais\n")
 			pare
 
 			caso contrario :
@@ -42,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 426; 
+ * @POSICAO-CURSOR = 522; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
