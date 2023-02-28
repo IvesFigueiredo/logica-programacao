@@ -13,7 +13,7 @@ programa
 	escreva("Quantas vezes você quer que o nome apareça na tela?:\t")
 	leia(var1)
 	para (contador = 1; contador <= var1; contador++) {
-		escreva(contador,"\t",nome,"\tn° do usuário: ", numUse, "\n")
+		escreva(contador,"\t",nome,"\n")
 		}
 
 		
@@ -24,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 391; 
+ * @POSICAO-CURSOR = 353; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
