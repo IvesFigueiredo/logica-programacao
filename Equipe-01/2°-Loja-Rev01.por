@@ -5,7 +5,7 @@ programa
 	  Questão 01*/
 
 	  inteiro contador = 0
-	  real prazo, vista, valPrazo, total = 0, somaVista = 0, somaPrazo = 0
+	  real prazo, vista, valPrazo, somaVista = 0, somaPrazo = 0
 	  caracter pagamento
 	
 	funcao inicio()
@@ -29,7 +29,7 @@ programa
 				escreva("\nQuanto custa o produto?:\t")
 				leia(prazo)
 
-				valPrazo = prazo * 1*1
+				valPrazo = prazo * 1.1
 
 				somaPrazo = valPrazo + somaPrazo
 				pare
@@ -40,10 +40,18 @@ programa
 			
 		} enquanto (contador < 5 )
 
-			se (contador < 5) {
+			escreva("O valor a vista foi: ", somaVista, "\n")	
+
+			escreva("O valor a prazo foi: ", somaPrazo, "\n")
+
+			escreva("A soma total das vendas foi: ", somaVista+somaPrazo)
+
+			escreva("\nA soma total de juros das compras a prazo foi: ", somaPrazo*0.1)
+			
+			/*se (contador == 5) {
 				total = somaPrazo +somaVista
 				escreva("O valor total é: ", total)
-		}
+		}*/
 	}
 	
 						
@@ -54,9 +62,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 869; 
+ * @POSICAO-CURSOR = 987; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {contador, 7, 11, 8}-{valPrazo, 8, 22, 8}-{total, 8, 32, 5}-{somaVista, 8, 43, 9}-{somaPrazo, 8, 58, 9};
+ * @SIMBOLOS-INSPECIONADOS = {contador, 7, 11, 8}-{valPrazo, 8, 22, 8}-{somaVista, 8, 32, 9}-{somaPrazo, 8, 47, 9};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
