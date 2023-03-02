@@ -16,6 +16,7 @@ programa
 			faca {
 			escreva("Qual a forma de pagamento? [ V p/ à vista || P p/ à prazo ]:\t")
 			leia(pagamento)
+			contador++
 			
 			escolha(pagamento) {
 				caso 'V' :
@@ -37,21 +38,25 @@ programa
 				pare
 			}
 			
-		} enquanto (contador <=5 )
-		
-		total = somaPrazo +somaVista
-		escreva("O valor total é: ", total)
-		
+		} enquanto (contador < 5 )
+
+			se (contador < 5) {
+				total = somaPrazo +somaVista
+				escreva("O valor total é: ", total)
+		}
 	}
+	
+						
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 868; 
+ * @POSICAO-CURSOR = 869; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {contador, 7, 11, 8}-{pagamento, 9, 12, 9}-{total, 8, 32, 5}-{somaPrazo, 8, 58, 9}-{somaVista, 8, 43, 9};
+ * @SIMBOLOS-INSPECIONADOS = {contador, 7, 11, 8}-{valPrazo, 8, 22, 8}-{total, 8, 32, 5}-{somaVista, 8, 43, 9}-{somaPrazo, 8, 58, 9};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
