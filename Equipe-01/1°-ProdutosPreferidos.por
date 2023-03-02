@@ -1,5 +1,8 @@
 programa
 {
+	/*Nome da dupla: Ives Gabriel F. S. Pinto || Alexandre Silveira Mullem
+	  Lista 01
+	  Questão 01*/
 	
 	inteiro  combst, qntdAlc =0, qntdDie=0, qntdGas=0, somaAlc = 0, somaDie = 0, somaGas = 0 
 	
@@ -51,9 +54,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 679; 
+ * @POSICAO-CURSOR = 87; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {qntdAlc, 4, 18, 7}-{somaAlc, 4, 52, 7}-{somaDie, 4, 65, 7};
+ * @SIMBOLOS-INSPECIONADOS = {qntdAlc, 7, 18, 7}-{somaAlc, 7, 52, 7}-{somaDie, 7, 65, 7};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
