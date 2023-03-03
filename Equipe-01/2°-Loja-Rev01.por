@@ -2,7 +2,7 @@ programa
 {
 	/*Nome da dupla: Ives Gabriel F. S. Pinto || Alexandre Silveira Mullem
 	  Lista 01
-	  Questão 01*/
+	  Questão 02*/
 
 	  inteiro contador = 0
 	  real prazo, vista, valPrazo, somaVista = 0, somaPrazo = 0
@@ -14,7 +14,7 @@ programa
 /*MUDAR O LAÇO DE REPETIÇÃO*/	
 			
 			faca {
-			escreva("Qual a forma de pagamento? [ V p/ à vista || P p/ à prazo ]:\t")
+			escreva("\nQual a forma de pagamento? [ V p/ à vista || P p/ à prazo ]:\t")
 			leia(pagamento)
 			contador++
 			
@@ -40,18 +40,14 @@ programa
 			
 		} enquanto (contador < 5 )
 
-			escreva("O valor a vista foi: ", somaVista, "\n")	
+			escreva("\nO valor a vista foi: ", somaVista, "\n")	
 
-			escreva("O valor a prazo foi: ", somaPrazo, "\n")
+			escreva("\nO valor a prazo foi: ", somaPrazo, "\n")
 
-			escreva("A soma total das vendas foi: ", somaVista+somaPrazo)
+			escreva("\nA soma total das vendas foi: ", somaVista+somaPrazo)
 
-			escreva("\nA soma total de juros das compras a prazo foi: ", somaPrazo*0.1)
+			escreva("\n\nA soma total de juros das compras a prazo foi: ", somaPrazo*0.1, "\n")
 			
-			/*se (contador == 5) {
-				total = somaPrazo +somaVista
-				escreva("O valor total é: ", total)
-		}*/
 	}
 	
 						
@@ -62,7 +58,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 987; 
+ * @POSICAO-CURSOR = 108; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {contador, 7, 11, 8}-{valPrazo, 8, 22, 8}-{somaVista, 8, 32, 9}-{somaPrazo, 8, 47, 9};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
