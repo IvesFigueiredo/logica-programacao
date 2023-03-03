@@ -4,7 +4,7 @@ programa
 	  Lista 01
 	  Questão 01*/
 	
-	inteiro  combst, qntdAlc =0, qntdDie=0, qntdGas=0, somaAlc = 0, somaDie = 0, somaGas = 0 
+	inteiro  combst, qntdAlc =0, qntdDie=0, qntdGas=0 
 	
 	
 	funcao inicio()
@@ -54,9 +54,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 87; 
+ * @POSICAO-CURSOR = 163; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {qntdAlc, 7, 18, 7}-{somaAlc, 7, 52, 7}-{somaDie, 7, 65, 7};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
