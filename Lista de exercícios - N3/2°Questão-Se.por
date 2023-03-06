@@ -6,7 +6,7 @@ programa
 	funcao inicio()
 	{
 
-		para (contador = 0; contador <= 19; contador++) {
+		para (contador = 0; contador < 20; contador++) {
 
 			escreva("Digite um número:\t")
 			leia(num1)
@@ -26,9 +26,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 36; 
+ * @POSICAO-CURSOR = 116; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {num1, 4, 9, 4}-{num2, 4, 25, 4}-{resul, 4, 35, 5}-{contador, 4, 15, 8};
+ * @SIMBOLOS-INSPECIONADOS = {num1, 4, 9, 4}-{contador, 4, 15, 8}-{num2, 4, 25, 4}-{resul, 4, 35, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
