@@ -3,13 +3,17 @@ programa
 	
 	real nota1 = 0, media = 0
 	inteiro contador, falta
-	cadeia opcao
+	cadeia opcao, nome
 	
 	funcao inicio()
 	{
 		faca {
 
 		media = 0
+
+		escreva("\nDigite o nome do aluno:\t")
+		leia(nome)
+		
 			para (contador = 0; contador < 3; contador++) {
 
 				escreva("\nDigite a nota:\t")
@@ -31,19 +35,27 @@ programa
 					media = media/3
 			
 				se ( falta >= 10) {
-					escreva("\nAluno Reprovado\n")
+					escreva("\n===========================")
+					escreva("\n||\tO aluno, ", nome," está, REPROVADO, por faltas.\n")
+					escreva("===========================\n")
 				}
 
 				senao se (media >= 7) {
-					escreva("\nAluno Aprovado\nCom a média:\t", media, "\n")
+					escreva("\n===============================")
+					escreva("\n||\tO aluno, ",nome," está APROVADO.\n||\tCom a média:\t", media, ".\n")
+					escreva("===============================\n")
 				}
 
 				senao se (media >=5) {
-					escreva("\nAluno em Recuperação\nCom a média:\t", media, "\n")
+					escreva("\n===============================")
+					escreva("\n||\tO aluno, ",nome," está em RECUPERAÇÃO.\n||\tCom a média:\t", media, ".")
+					escreva("\n===============================\n")
 				}
 
 				senao {
-					escreva("\nAluno Reprovado\nCom a média:\t", media, "\n")
+					escreva("\n===============================")
+					escreva("\n||\tO aluno, ",nome," está REPROVADO.\n||\tCom a média:\t", media, ".")
+					escreva("\n===============================\n")
 				}
 			}
 
@@ -60,7 +72,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 279; 
+ * @POSICAO-CURSOR = 722; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {nota1, 4, 6, 5}-{media, 4, 17, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
