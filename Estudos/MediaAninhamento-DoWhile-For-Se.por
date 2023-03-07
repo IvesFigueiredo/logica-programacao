@@ -3,10 +3,11 @@ programa
 	
 	real nota1 = 0, media = 0
 	inteiro contador, falta
+	cadeia opcao
 	
 	funcao inicio()
 	{
-		enquanto ( nota1 >= 0 e nota1 < 10) {
+		faca {
 
 			para (contador = 0; contador < 3; contador++) {
 
@@ -43,16 +44,21 @@ programa
 					escreva("\nAluno Reprovado\nCom a média:\t", media, "\n")
 				}
 			}
+
+			escreva("\nDeseja continuar a atribuir as notas? [Sim ou Não]\t")
+			leia(opcao)
+
+			} enquanto ( opcao == "Sim")
 		} 
 	}
-}
+
 
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 430; 
+ * @POSICAO-CURSOR = 800; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
