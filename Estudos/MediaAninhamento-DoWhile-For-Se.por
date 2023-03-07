@@ -20,25 +20,28 @@ programa
 				media = nota1+media
 			}
 						
+			se (nota1 >= 0 e nota1 < 10) {
+			
 			escreva("\nQuantas faltas o aluno possui:\t")
 			leia(falta)
 
-				media = media/3
+					media = media/3
+			
+				se ( falta >= 10) {
+					escreva("\nAluno Reprovado\n")
+				}
 
-			se ( falta >= 10) {
-				escreva("\nAluno Reprovado\n")
-			}
+				senao se (media >= 7) {
+					escreva("\nAluno Aprovado\nCom a média:\t", media, "\n")
+				}
 
-			senao se (media >= 7) {
-				escreva("\nAluno Aprovado\nCom a média:\t", media, "\n")
-			}
+				senao se (media >=5) {
+					escreva("\nAluno em Recuperação\nCom a média:\t", media, "\n")
+				}
 
-			senao se (media >=5) {
-				escreva("\nAluno em Recuperação\nCom a média:\t", media, "\n")
-			}
-
-			senao {
-				escreva("\nAluno Reprovado\nCom a média:\t", media, "\n")
+				senao {
+					escreva("\nAluno Reprovado\nCom a média:\t", media, "\n")
+				}
 			}
 		} 
 	}
@@ -49,7 +52,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 277; 
+ * @POSICAO-CURSOR = 430; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
