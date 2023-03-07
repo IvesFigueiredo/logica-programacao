@@ -1,12 +1,12 @@
 programa
 {
 	
-	real nota1, media = 0
+	real nota1 = 0, media = 0
 	inteiro contador, falta
 	
 	funcao inicio()
 	{
-		faca {
+		enquanto ( nota1 >= 0 e nota1 < 10) {
 
 			para (contador = 0; contador < 3; contador++) {
 
@@ -40,9 +40,7 @@ programa
 			senao {
 				escreva("\nAluno Reprovado\nCom a média:\t", media, "\n")
 			}
-		} enquanto ( nota1 >= 0 e nota1 < 10) 
-			
-		
+		} 
 	}
 }
 
@@ -51,9 +49,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 279; 
+ * @POSICAO-CURSOR = 277; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {nota1, 4, 6, 5}-{media, 4, 13, 5}-{contador, 5, 9, 8};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
