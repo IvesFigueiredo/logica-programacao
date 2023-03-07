@@ -9,19 +9,21 @@ programa
 	{
 		faca {
 
+		media = 0
 			para (contador = 0; contador < 3; contador++) {
 
 				escreva("\nDigite a nota:\t")
 				leia(nota1)
 
 					se (nota1 > 10 ou nota1 < 0) {
-						pare
+						escreva("\nValor inválido, por favor as notas devem ser de 0 - 10.\n")
+					pare
 					}
 
 				media = nota1+media
 			}
 						
-			se (nota1 >= 0 e nota1 < 10) {
+			se (nota1 >= 0 e nota1 <= 10) {
 			
 			escreva("\nQuantas faltas o aluno possui:\t")
 			leia(falta)
@@ -48,9 +50,9 @@ programa
 			escreva("\nDeseja continuar a atribuir as notas? [Sim ou Não]\t")
 			leia(opcao)
 
-			} enquanto ( opcao == "Sim")
-		} 
-	}
+		} enquanto ( opcao == "Sim" ou opcao == "sim")
+	} 
+}
 
 
 /* $$$ Portugol Studio $$$ 
@@ -58,9 +60,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 800; 
+ * @POSICAO-CURSOR = 279; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {nota1, 4, 6, 5}-{media, 4, 17, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
