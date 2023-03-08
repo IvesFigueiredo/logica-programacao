@@ -1,6 +1,6 @@
 programa
 {
-	
+	inclua biblioteca Matematica --> m
 	real nota1 = 0, media = 0
 	inteiro contador, falta
 	cadeia opcao, nome
@@ -17,35 +17,34 @@ programa
 		escreva("\nQuantas faltas o aluno possui:\t")
 		leia(falta)
 
-			se ( falta >= 10) {
-			
-					escreva("\n===========================")
-					escreva("\n||\tO aluno, ", nome," está REPROVADO, por faltas.\n")
-					escreva("===========================\n")
-			}
+			enquanto ( falta < 0) {
+				escreva("Operação inválida, por favor informe a quantidade de faltas corretamente.\nDigite quantas faltas o aluno(a) possui:\t")
+				leia(falta)
+				}
 
-			senao se ( falta < 10 e falta >= 0) {
-				para (contador = 0; contador < 3; contador++) {
+			se ( falta < 10 e falta >= 0) {
+				para (contador = 1; contador <= 3; contador++) {
 
-					se (nota1 > 10 e nota1 < 0) {
-						escreva("\nValor inválido, por favor as notas devem ser de 0 - 10.\n")
-						}
-										
-					senao {
-						escreva("\nDigite a nota:\t")
+					escreva("\nDigite a nota ",contador," :\t")
+					leia(nota1)
+						
+					enquanto (nota1 > 10 ou nota1 < 0) {
+						escreva("\nValor inválido, por favor as notas devem ser de 0 - 10.\nDigite a nota ",contador," correta:\t")
 						leia(nota1)
-					}
-					
+						}
+									
 				media = nota1+media
 				}
 			}
 
 			senao {
-				escreva("Operação inválida, por favor informe a quantidade de faltas corretamente.\n")
-			pare
+				escreva("\n===========================")
+				escreva("\n||\tO aluno(a), ", nome," está REPROVADO, por faltas.\n")
+				escreva("===========================\n")
 			}
 
 				media = media/3
+				media = m.arredondar(media, 2)
 
 			se (media >= 7) {
 				escreva("\n===============================")
@@ -78,7 +77,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 886; 
+ * @POSICAO-CURSOR = 1162; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
