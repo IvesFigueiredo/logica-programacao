@@ -1,6 +1,6 @@
 programa
 {
-	
+	inclua biblioteca Matematica --> m
 	real nota1 = 0, media = 0
 	inteiro contador, falta
 	cadeia opcao, nome
@@ -10,7 +10,7 @@ programa
 		faca {
 
 		media = 0
-
+		
 		escreva("\nDigite o nome do aluno:\t")
 		leia(nome)
 		
@@ -33,6 +33,7 @@ programa
 			leia(falta)
 
 					media = media/3
+					media = m.arredondar(media, 2)
 			
 				se ( falta >= 10) {
 					escreva("\n===========================")
@@ -72,7 +73,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 722; 
+ * @POSICAO-CURSOR = 652; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
