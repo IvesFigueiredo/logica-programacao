@@ -4,11 +4,22 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Olá, digite um número para saber seu fatorial:\t")
-		leia(num1)
 
+		assunto()
+		calculoFat()
+		fimPrograma()
+	}
+
+	funcao assunto() {
+	
+		escreva("Olá, digite um número para saber seu fatorial:\t")
+		
+	}
+	
+	funcao calculoFat() {
+	
 		faca {
-			escreva("Digite um número maior que 0:\t")
+			escreva("\nDigite um número maior que 0:\t")
 			leia (num1)
 		}enquanto (num1 < 1)
 		
@@ -29,13 +40,17 @@ programa
 			escreva("O fatorial de ", num2," é ", fatorial)
 		}
 	}
+
+		funcao fimPrograma(){ 
+			escreva("\n|---------------------------------------------------|\n|\t\tMUITO OBRIGADO!\t\t\t    |\n|\t© Direitos Reservados - Ives F. Pinto\t    |\n|\t\t  ATÉ LOGO!\t\t\t    |\n|---------------------------------------------------|\n")
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 189; 
+ * @POSICAO-CURSOR = 847; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
