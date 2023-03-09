@@ -2,22 +2,34 @@ programa
 {	
 	inclua biblioteca Matematica --> m
 
-	real num1, num2
+	real num1, num2, resul // Utilizando as variáveis globais
 	
 	funcao inicio()
-	{
-		obterSoma()	
+	{	
+		leitura()
+		obterSoma()
+		escrevaResultado() 
 		fimPrograma()
 	}
 
-	funcao obterSoma() { 
-	
+	funcao leitura() {
+		
 		escreva("Olá, digite o primeiro número:\t")
 		leia(num1)
 		escreva("\nDigite o segundo número:\t")
 		leia(num2)
+	}
+
+	funcao real obterSoma() { 
+	
+		resul = m.arredondar(num1+num2, 2)
+		retorne resul    
+// PERGUNTAR: POR QUE NESTE CASO MESMO HAVENDO A DECLARAÇÃO DAS VARIAVEIS GLOBAIS REQUER QUE RETORNE?
+	}
+
+	funcao escrevaResultado() {
 		
-		escreva("\nA soma dos resultado é:\t", m.arredondar(num1+num2, 2), ".\n")
+		escreva("\nA soma dos resultado é:\t", resul, ".\n")
 	}
 
 	funcao fimPrograma(){
@@ -29,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 65; 
+ * @POSICAO-CURSOR = 427; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
