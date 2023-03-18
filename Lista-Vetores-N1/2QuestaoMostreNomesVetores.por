@@ -1,6 +1,6 @@
 programa
 {
-	inteiro i
+	inteiro i
 	cadeia nome[6]
 	
 	funcao inicio()
@@ -10,6 +10,12 @@ programa
 			leia(nome[i])
 			
 		}
+	limpa()
+	ordenador()
+	fimPrograma()
+	}
+
+	funcao ordenador(){
 		
 		para(i=1;i<6;i++) {
 			escreva("\nOs nomes digitados em ordem: ",i,"° ", nome[i]) 
@@ -18,8 +24,6 @@ programa
 		para (i=5; i>0;i--) {
 			escreva("A lista em ordem inversa dos nomes: ",i,"° ", nome[i],"\n")
 		}
-	
-	fimPrograma()
 	}
 	
 	funcao fimPrograma(){
@@ -32,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 387; 
+ * @POSICAO-CURSOR = 156; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
