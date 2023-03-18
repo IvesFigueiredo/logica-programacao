@@ -1,6 +1,6 @@
 programa
 {
-	inteiro num1[11], i
+	inteiro num1[11], i
 	inteiro num2[11]
 	
 	funcao inicio()
@@ -11,21 +11,29 @@ programa
 			leia(num1[i])	
 		}
 
+		limpa()
+		vetor()
+		calculo()
+		fimPrograma()
+	}
+
+	funcao vetor(){
+
 		escreva("\nOs números do 1° vetor são:\n")
 		para (i=1; i<11;i++) {
 			escreva(num1[i]," | ") 
 		}
+	}
+
+	funcao calculo(){
 
 		escreva("\n\nOs números do 1° vetor multiplicados por 5 são:\n")
 		para (i=1; i<11;i++) {
 
 		num2[i] = num1[i]*5
 
-		escreva(num2[i], " | ")
-			
+		escreva(num2[i], " | ")		
 		}
-
-	fimPrograma()
 	}
 	
 	funcao fimPrograma(){
@@ -37,7 +45,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 436; 
+ * @POSICAO-CURSOR = 173; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
