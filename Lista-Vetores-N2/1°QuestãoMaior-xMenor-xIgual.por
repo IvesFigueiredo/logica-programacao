@@ -1,5 +1,5 @@
 programa
-{	
+{	
 	inteiro num[11], i, numRef, nMenor=0,num1=0
 	funcao inicio()
 	{
@@ -14,6 +14,13 @@ programa
 		escreva("\nDigite um número de referência [Inteiro]:\t")
 		leia(numRef)
 
+	limpa()
+	verificador()
+	print()
+	fimPrograma()
+	}
+
+	funcao verificador() {
 		escreva("\nOs números maiores que o n° de referência são:\n")
 		para (i=1; i < 11; i++) {   
 			 se (num[i] > numRef) {
@@ -29,10 +36,11 @@ programa
 				num1++
 			}
 		}
+	}
+
+	funcao print() {
 		escreva("\n\n",nMenor," número(s) são menor(es) que o n° de referência\n")
 		escreva(num1," número(s) são igual(is) ao n° de referência\n")
-	
-	fimPrograma()
 	}
 
 	funcao fimPrograma(){
@@ -45,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 662; 
+ * @POSICAO-CURSOR = 265; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
