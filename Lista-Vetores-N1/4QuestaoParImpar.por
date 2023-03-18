@@ -1,6 +1,6 @@
 programa
 {
-	inteiro num, nPar[11], nImpar[11], i
+	inteiro num, nPar[11], nImpar[11], i
 	cadeia vetorPar = "", vetorImpar = ""
 	funcao inicio()
 	{
@@ -8,29 +8,32 @@ programa
 			escreva("Digite o ",i,"° número\t")
 			leia(num)
 		
-			se (num %2 == 0) {
+
+			se (num %2 == 0 e num != 0) {
 					nPar[i] = num
 					vetorPar += i+"° posição recebe :"+ num + "\n"
-				}
+			}
 						
 			senao se (num %2 ==1 ou num %2 ==-1) {							
 					nImpar[i] = num
 					vetorImpar += i+"° posição recebe :"+ num + "\n"							
 			}
+			senao {
+				nPar[i] = num
+				vetorPar += i+"° posição recebe: "+ num +" é nulo\n"
+				nImpar[i] = num
+				vetorImpar += i+"° posição recebe: "+ num +" é nulo\n"
+			}
 		}
-
-		escreva("\nPara o vetor par:\n", vetorPar)
-		/*para(i=1; i<11; i++) {
-			
-			
-			escreva("\n",i,"° ", nPar[i], " | ")
-			
-		}*/
-		escreva("\n\nPara o vetor impar:\n", vetorImpar)
-		/*para(i=1; i<11; i++) {
-			escreva("\n",i,"° ", nImpar[i], " | ")
-		}*/
+	limpa()
+	print()
 	fimPrograma()
+	}
+
+	funcao print(){
+		escreva("\nPara o vetor par:\n", vetorPar)
+		
+		escreva("\n\nPara o vetor impar:\n", vetorImpar)
 	}
 	
 	funcao fimPrograma(){
@@ -43,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 273; 
+ * @POSICAO-CURSOR = 624; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
