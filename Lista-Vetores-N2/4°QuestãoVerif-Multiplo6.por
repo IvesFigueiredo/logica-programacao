@@ -8,6 +8,14 @@ programa
 			escreva("Digite o ",i,"º número de 8:\t")
 			leia(num[i])
 		}
+
+	fimPrograma()
+	calc()
+	print()
+	}
+
+	funcao calc() {
+	
 		escreva("Os números digitados são:\n\n")
 		para (i=1; i<9; i++) {
 			escreva(i,"º n° ",num[i],"\n")
@@ -16,11 +24,11 @@ programa
 				multi = multi+1
 			}
 		}
+	}
+	funcao print(){
 		escreva("\nA quantidade de números inseridos que são múltiplos de 6 foi de ",multi," números.")
 
-	fimPrograma()
-		
-	}
+	}	
 
 	funcao fimPrograma(){
 		escreva("\n\n|---------------------------------------------------|\n|\t\tMUITO OBRIGADO!\t\t\t    |\n|\t© Direitos Reservados - Ives F. Pinto\t    |\n|\t\t  ATÉ LOGO!\t\t\t    |\n|---------------------------------------------------|\n")
@@ -31,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 403; 
+ * @POSICAO-CURSOR = 359; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {multi, 3, 20, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
