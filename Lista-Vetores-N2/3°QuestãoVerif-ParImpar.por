@@ -1,6 +1,6 @@
 programa
 {
-	inteiro num[16], i
+	inteiro num[16], i
 	cadeia dados=""
 	
 	funcao inicio()
@@ -8,9 +8,9 @@ programa
 		para (i=1; i<16; i++) {
 			escreva("Digite o ",i,"º número para ser verificado:\t")
 			leia(num[i])
-		
+
 				se (num[i] %2 == 0 e num[i] !=0) {
-					dados +="O "+i+"º n° "+num[i]+" é par | \n"
+					dados +="O "+i+"º n° "+num[i]+" é par | \n"
 				}
 				senao se (num[i] == 0) {
 					dados += "O "+i+"º n° "+num[i]+" é nulo | \n"
@@ -19,10 +19,14 @@ programa
 					dados += "O "+i+"º n° "+num[i] + " é ímpar | \n"
 				}
 		}
-		escreva("\n\nA verificação dos números:\n")
-		escreva(dados)
+		limpa()
+		print()
+		fimPrograma()
+	}
 	
-	fimPrograma()	
+		funcao print() {
+		escreva("\n\nA verificação dos números:\n")
+		escreva(dados)	
 	}
 
 	funcao fimPrograma(){
@@ -34,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 787; 
+ * @POSICAO-CURSOR = 438; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
