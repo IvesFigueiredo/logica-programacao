@@ -17,13 +17,17 @@ programa
 
 			sal[i] *= 1.08
 		}
+	print()
+	fimPrograma()
+	}
+	
+	funcao print() {
+		
 		escreva("\nO novo salário será:\n\n")
 
 		para (i=1; i<6; i++) {
 			escreva(i,"º - ",nome[i]," com o reajuste de 8%, o novo salário será de R$",m.arredondar(sal[i], 2),"\n")
-		}
-
-	fimPrograma()
+		}	
 	}
 
 	funcao fimPrograma(){
@@ -35,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 743; 
+ * @POSICAO-CURSOR = 773; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
