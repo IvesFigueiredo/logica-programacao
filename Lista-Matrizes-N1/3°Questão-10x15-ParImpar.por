@@ -165,13 +165,13 @@ limpa()
 				pare
 				}
 
-			escreva("Soma da linha "+cl+": "+scl+"\n")
+			escreva("Soma da coluna "+cl+": "+scl+"\n")
 		}
 		se (ln1 %2 == 0) {
-			escreva("\nA soma das linhas é: ",cl1," e é par.\n")
+			escreva("\nA soma das colunas é: ",cl1," e é par.\n")
 		}		
 		senao {
-			escreva("\nA soma das linhas é: ",cl1," e é ímpar.\n")
+			escreva("\nA soma das colunas é: ",cl1," e é ímpar.\n")
 		}
 
 		fimPrograma()
@@ -186,7 +186,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2815; 
+ * @POSICAO-CURSOR = 2764; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {ln, 6, 22, 2}-{sln, 6, 30, 3}-{ln1, 6, 37, 3};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
