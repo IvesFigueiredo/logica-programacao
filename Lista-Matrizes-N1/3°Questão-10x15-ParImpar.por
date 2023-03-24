@@ -1,33 +1,37 @@
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	 
 	
-	inteiro mtr[4][6], ln, cl, sln=0, aculn= sln
+	inteiro mtr[10][15], ln, cl, sln=0, ln1 =0, scl =0, cl1=0
 	
 	funcao inicio()
 	{
-		para(ln=0; ln<4; ln++){
-			para(cl=0; cl<6; cl++){
+		para(ln=0; ln<10; ln++){
+			para(cl=0; cl<15; cl++){
 				escreva("Digite o valor da linha ["+ln+"] e coluna ["+cl+"]:\t")
-				leia(mtr[ln][cl])
+				mtr[ln][cl] = u.sorteia(0, 9)
+				escreva("\n")
+				
 			}
 		}
 
 limpa()
-		para (ln=0; ln<4; ln++){
-			para (cl=0; cl<6; cl++){
+		para (ln=0; ln<10; ln++){
+			para (cl=0; cl<15; cl++){
 				escreva(mtr[ln][cl]+" ")
 			}
 			escreva("\n")
 		}
+		escreva("\n")
 
-		para (ln=0; ln<4; ln++) {
-			aculn += sln
+		para (ln=0; ln<10; ln++) {
+			
 			sln=0
-			para (cl=0; cl<6;cl++){
+			para (cl=0; cl<15;cl++){
 				se (ln == 0){
-					sln += mtr[ln][cl] 
+					sln += mtr[ln][cl]
+					ln1 = sln 
 				}
 				
 				senao se (ln==1) {
@@ -49,9 +53,127 @@ limpa()
 					
 					sln += mtr[ln][cl]
 				}
+				senao se (ln==5) {
+					
+					sln += mtr[ln][cl]
+				}
+				senao se (ln==6) {
+					
+					sln += mtr[ln][cl]
+				}
+				senao se (ln==7) {
+					
+					sln += mtr[ln][cl]
+				}
+				senao se (ln==8) {
+					
+					sln += mtr[ln][cl]
+				}
+				senao se (ln==9) {
+					
+					sln += mtr[ln][cl]
+				}
 			}
-			escreva("Soma das linha "+ln+": "+sln,"\nSoma acumulativa das linhas "+aculn,"\n")
+			enquanto (ln>0 e ln<10){
+				ln1 = ln1 + sln
+				pare
+				}
+			
+		escreva("Soma da linha "+ln+": "+sln+"\n")
 		}
+		se (ln1 %2 == 0) {
+			escreva("\nA soma das linhas é: ",ln1," e é par.\n\n")
+		}		
+		senao {
+			escreva("\nA soma das linhas é: ",ln1," e é ímpar.\n\n")
+		}
+//_______________________________________________________________________________________________________
+
+
+		para (cl=0; cl<15; cl++) {
+			
+			scl=0
+			para (ln=0; ln<10;ln++){
+				se (cl == 0){
+					scl += mtr[ln][cl]
+					cl1 = scl 
+				}
+				
+				senao se (cl==1) {
+					
+					scl += mtr[ln][cl]
+				}
+				
+				senao se (cl==2) {
+					
+					scl += mtr[ln][cl]
+				}
+				
+				senao se (cl==3) {
+					
+					scl += mtr[ln][cl]
+				}
+				
+				senao se (cl==4) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==5) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==6) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==7) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==8) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==9) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==10) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==11) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==12) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==13) {
+					
+					scl += mtr[ln][cl]
+				}
+				senao se (cl==14) {
+					
+					scl += mtr[ln][cl]
+				}
+				
+			}
+			enquanto (cl>0 e cl<15){
+				cl1 = cl1 + scl
+				pare
+				}
+
+			escreva("Soma da linha "+cl+": "+scl+"\n")
+		}
+		se (ln1 %2 == 0) {
+			escreva("\nA soma das linhas é: ",cl1," e é par.\n")
+		}		
+		senao {
+			escreva("\nA soma das linhas é: ",cl1," e é ímpar.\n")
+		}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -59,9 +181,9 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 443; 
+ * @POSICAO-CURSOR = 2785; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {ln, 6, 22, 2}-{sln, 6, 30, 3}-{ln1, 6, 37, 3};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
