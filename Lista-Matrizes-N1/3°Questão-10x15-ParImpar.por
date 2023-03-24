@@ -173,7 +173,12 @@ limpa()
 		senao {
 			escreva("\nA soma das linhas é: ",cl1," e é ímpar.\n")
 		}
-		
+
+		fimPrograma()
+	}
+	
+	funcao fimPrograma(){
+		escreva("\n\n|---------------------------------------------------|\n|\t\tMUITO OBRIGADO!\t\t\t    |\n|\t© Direitos Reservados - Ives F. Pinto\t    |\n|\t\t  ATÉ LOGO!\t\t\t    |\n|---------------------------------------------------|\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -181,7 +186,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2785; 
+ * @POSICAO-CURSOR = 2815; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {ln, 6, 22, 2}-{sln, 6, 30, 3}-{ln1, 6, 37, 3};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
