@@ -9,7 +9,7 @@ programa
 		para (ln=0; ln<5; ln++) {
 			para (cl=0; cl<2; cl++) {
 				escreva("Digite o valor da primeira matriz na linha [",ln,"] e coluna [",cl,"]:\t")
-				mtr1[ln][cl] = u.sorteia(0,9)
+				mtr1[ln][cl] = u.sorteia(0,9) /*Inseri uma biblioteca de sorteio para auxiliar na correção, para inserir os valores manualmente é --> leia(mtr[ln][cl])*/
 				escreva("\n")
 			}
 		}
@@ -17,7 +17,7 @@ programa
 		para (ln=0; ln<5; ln++) {
 			para (cl=0; cl<2; cl++) {
 				escreva("Digite  o valor da segunda matriz na linha [",ln,"] e coluna [",cl,"]:\t")
-				mtr2[ln][cl] = u.sorteia(0, 9)
+				mtr2[ln][cl] = u.sorteia(0, 9) /*Inseri uma biblioteca de sorteio para auxiliar na correção, para inserir os valores manualmente é --> leia(mtr[ln][cl])*/
 				escreva("\n")
 			}
 		}		
@@ -44,6 +44,7 @@ limpa()
 			}
 			escreva("\n")
 		}
+		fimPrograma()
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -51,7 +52,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1039; 
+ * @POSICAO-CURSOR = 754; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
