@@ -10,7 +10,7 @@ programa
 		para(ln=0; ln<10; ln++){
 			para(cl=0; cl<15; cl++){
 				escreva("Digite o valor da linha ["+ln+"] e coluna ["+cl+"]:\t")
-				mtr[ln][cl] = u.sorteia(0, 9) /*Inseri uma biblioteca de sorteio para auxiliar na correção, para inserir os valores é --> leia(mtr[ln][cl]," ")*/
+				mtr[ln][cl] = u.sorteia(0, 9) /*Inseri uma biblioteca de sorteio para auxiliar na correção, para inserir os valores é --> leia(mtr[ln][cl])*/
 				escreva("\n")
 				
 			}
@@ -186,7 +186,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 285; 
+ * @POSICAO-CURSOR = 393; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {ln, 6, 22, 2}-{sln, 6, 30, 3}-{ln1, 6, 37, 3};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
