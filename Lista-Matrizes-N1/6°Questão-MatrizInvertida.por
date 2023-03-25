@@ -9,7 +9,7 @@ programa
 		para (ln=0; ln<3; ln++) {
 			para (cl=0; cl<3; cl++) {
 				escreva("Digite o valor da linha [",ln,"] e coluna [",cl,"]:\t")
-				mtr[ln][cl] = u.sorteia(0,9) /*Inseri uma biblioteca de sorteio para auxiliar na correção, para inserir os valores manualmente é --> leia(mtr[ln][cl])*/
+				mtr[ln][cl] = u.sorteia(0,9) /*Inseri uma biblioteca de sorteio para auxiliar na correção, para inserir os valores manualmente é --> leia(mtr[ln][cl])*/
 				escreva("\n")
 			}
 		}
@@ -24,8 +24,8 @@ programa
 		escreva("\nMatriz Invertida:\n")
 		para (ln=0; ln<3; ln++){
 			para (cl=0; cl<3; cl++) {
-				imtr[ln][cl] = mtr[ln][cl]
-				escreva(imtr[cl][ln]," ")
+				imtr[ln][cl] = mtr[cl][ln]
+				escreva(imtr[ln][cl]," ")
 			}
 			escreva("\n")
 		}
@@ -41,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 391; 
+ * @POSICAO-CURSOR = 704; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
