@@ -35,7 +35,7 @@ limpa()
 			}
 			escreva("\n")
 		}
-		escreva("\nA soma da diagonal da matriz é: ",soma, "\n")
+		escreva("\nA soma dos valores presentes na diagonal da matriz é: ",soma, "\n")
 	
 	fimPrograma()
 	}
@@ -49,7 +49,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 990; 
+ * @POSICAO-CURSOR = 714; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
