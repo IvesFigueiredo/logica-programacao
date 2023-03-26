@@ -1,7 +1,7 @@
 programa
 {
 	inteiro id[11], i, qnt=0, qntd=0
-	real alt[10], pes[10], med=0.0
+	real alt[11], pes[11], med=0.0
 	
 	funcao inicio()
 	{
@@ -18,13 +18,14 @@ programa
 				qnt++
 			}
 			senao se ( id[i] > 10 e id[i] < 30 e alt[i] > 1.9) {
-				qntd = qntd*10
+				qntd++
 			}
 		}
+limpa()
 		med = med/10
 		qntd = qntd*10
 		escreva("\nA média de idade é: ",med," anos.")
-		escreva("\n A quantidade de pessoas com mais de 90kg e menor que 1,50 metros: ",qnt," pessoas.")
+		escreva("\nA quantidade de pessoas com mais de 90kg e menor que 1,50 metros: ",qnt," pessoas.")
 		escreva("\nA porcentagem de perssoas que possuem a idade entre 10 e 30 anos e acima de 1.90 metros: ",qntd,"%.\n")
 	
 	fimPrograma()
@@ -39,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 434; 
+ * @POSICAO-CURSOR = 541; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {id, 3, 9, 2}-{med, 4, 24, 3};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
