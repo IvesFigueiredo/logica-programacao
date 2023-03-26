@@ -17,6 +17,7 @@ programa
 				leia(mtr2[ln][cl])
 			}
 		}
+limpa()
 		escreva("\n1ª Matriz:\n")
 		para (ln=0; ln<2; ln++) {
 			para (cl=0; cl<2; cl++) {
@@ -40,6 +41,11 @@ programa
 			}
 			escreva("\n")
 		}
+	fimPrograma()
+	}
+	
+	funcao fimPrograma(){
+		escreva("\n\n|---------------------------------------------------|\n|\t\tMUITO OBRIGADO!\t\t\t    |\n|\t© Direitos Reservados - Ives F. Pinto\t    |\n|\t\t  ATÉ LOGO!\t\t\t    |\n|---------------------------------------------------|\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -47,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 846; 
+ * @POSICAO-CURSOR = 1035; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
