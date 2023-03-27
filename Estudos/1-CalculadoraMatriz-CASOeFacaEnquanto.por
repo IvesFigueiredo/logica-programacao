@@ -2,7 +2,7 @@ programa
 {
 	inclua biblioteca Util --> u
 	
-	inteiro mtr1[4][4], mtr2[4][4], ln, cl, rmtr[4][4]
+	inteiro mtr1[4][4], mtr2[4][4], ln, cl, rmtr[4][4], soma=0, somaCl1=0, somaLn1=0
 	//real num1=0.0, num2=0.0, resu1=0.0
 	caracter operacao, r 
 	
@@ -60,6 +60,29 @@ limpa()
 				}
 				escreva("\n")
 			}
+
+			escreva("\n")
+			para(ln=0; ln<4; ln++) {
+				para(cl=0; cl<4; cl++) {
+					se (ln == cl) {
+						escreva(rmtr[ln][cl], " ")
+					}
+					senao {
+						escreva("* ")
+					}
+				}
+				escreva("\n")
+			}
+			
+				para (cl=0; cl<4; cl++) {
+					somaLn1+= rmtr[0][cl]
+				}
+				para (ln=0; ln<4; ln++) {
+					somaCl1+= rmtr[ln][0]
+				}
+			
+			escreva("A soma da 1ª coluna é: ",somaCl1,"\n")
+			escreva("A soma da 1ª linha é: ",somaLn1,"\n")
 		pare
 	
 		caso '-':
@@ -185,7 +208,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3231; 
+ * @POSICAO-CURSOR = 1816; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {mtr1, 5, 9, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
