@@ -9,7 +9,7 @@ programa
 	funcao inicio()
 	{
 			
-		escreva("Gostaria de realizar uma operação básica?\n")
+		escreva("Gostaria de realizar uma operação básica de matrizes?\n")
 faca {
 		para (ln=0; ln<4; ln++){
 			para (cl=0; cl<4; cl++) {
@@ -208,7 +208,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1816; 
+ * @POSICAO-CURSOR = 275; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {mtr1, 5, 9, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
