@@ -13,7 +13,6 @@ programa
 		faca {
 		escreva("\nQual operação deseja realizar?\n[1] - Inserir uma nova passagem.\n[2] - Verificar poltronas disponíveis.\n[3] - Relatório.\n[4] - Sair.\n")
 		leia(op)
-
 		escolha(op) {
 
 			caso '1' :
@@ -27,8 +26,7 @@ programa
 					escreva("\nPoltronas disponíveis do ônibus de Muritiba: [ 'U' estão vagos e 'M' estão ocupados ]\n\n")
 					para (ln=0; ln<11;ln++) {
 						para (cl=0; cl<4; cl++) {
-						escreva("\t",onibus_M[ln][cl]," ")
-						
+						escreva("\t",onibus_M[ln][cl]," ")						
 						}
 					escreva("\n")
 					}
@@ -48,8 +46,7 @@ programa
 				//}senao {     OLÁ PROFESSOR, COLOQUEI ESSA CONDICIONANTE PARA VALIDAR/PROIBIR MARCAR A LOCALIZAÇÃO NESTA POSIÇÃO E ESTÁ DANDO ALGUM TIPO DE BUG
 				//escreva("\nEsse poltrona já está ocupada.\n")   OLÁ PROFESSOR, COLOQUEI ESSA CONDICIONANTE PARA VALIDAR/PROIBIR MARCAR A LOCALIZAÇÃO NESTA POSIÇÃO E ESTÁ DANDO ALGUM TIPO DE BUG
 				//ln--
-				//cl--	
-				
+				//cl--					
 				pare
 
 					caso '2':
@@ -88,7 +85,7 @@ programa
 
 				para (ln=0; ln<11;ln++) {
 					para (cl=0; cl<4; cl++) {
-					escreva(onibus_M[ln][cl]," ")
+					escreva("\t",onibus_M[ln][cl]," ")
 				}
 				escreva("\n")
 			}
@@ -98,7 +95,7 @@ programa
 
 				para (ln=0; ln<11;ln++) {
 					para (cl=0; cl<4; cl++) {
-					escreva(onibus_SF[ln][cl]," ")
+					escreva("\t",onibus_SF[ln][cl]," ")
 				}
 				escreva("\n")
 			}
@@ -145,7 +142,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 596; 
+ * @POSICAO-CURSOR = 3551; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
