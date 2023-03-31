@@ -37,17 +37,17 @@ programa
 				faca{	
 				escreva("\nInsira a localização da poltrona na linha:\t")
 				leia(ln)
-				se(ln<0 e ln>11){		
+				se(ln<0 ou ln>11){		
 						escreva("\nInforme as coordenadas corretamente [Linha entre 0 e 10] e [Coluna ente 0 e 4]\n")
 						}
 				escreva("Insira a localização da poltrona na coluna:\t")
 				leia(cl)
-				se(cl<0 e cl>4){
+				se(cl<0 ou cl>4){
 						escreva("\nInforme as coordenadas corretamente [Linha entre 0 e 10] e [Coluna ente 0 e 4]\n")
 						}
 				ln--
 				cl--
-				}enquanto (ln<0 e ln>11 e cl<0 e cl>4)		
+				}enquanto (ln<0 ou ln>11 ou cl<0 ou cl>4)		
 				onibus_M[ln][cl] = "X"
 				escreva("Digite o nome do passageiro:\t")
 				leia(nomeM)
@@ -155,7 +155,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2027; 
+ * @POSICAO-CURSOR = 1661; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
