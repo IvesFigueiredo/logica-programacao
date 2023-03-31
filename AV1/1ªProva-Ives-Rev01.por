@@ -38,7 +38,7 @@ programa
 						leia(linha)
 						escreva("Insira a localização da poltrona na coluna:\t")
 						leia(colunas)
-							se(linha<0 ou colunas>11){		
+							se(linha<0 ou linha>11){		
 								escreva("\nInforme as coordenadas corretamente [Linha entre 0 e 10] e [Coluna ente 0 e 4]\n")
 								}
 							senao {
@@ -64,12 +64,12 @@ programa
 
 				caso '2':
 					
-					escreva("\nPoltronas disponíveis do ônibus de Muritiba: [ Nomeados estão vagos e 'X' estão ocupados ]\n\n")
+					escreva("\nPoltronas disponíveis do ônibus de São Felipe: [ Nomeados estão vagos e 'X' estão ocupados ]\n\n")
 					escreva("\t0\t1\t2\t3\n")
 					para (ln=0; ln<11;ln++) {
 						escreva(coluna[ln])
 						para (cl=0; cl<4; cl++) {	
-						escreva("\t",onibus_M[ln][cl])						
+						escreva("\t",onibus_SF[ln][cl])						
 						}
 					escreva("\n")
 					}	
@@ -78,7 +78,7 @@ programa
 					leia(linha)
 					escreva("Insira a localização da poltrona na coluna:\t")
 					leia(colunas)
-						se(linha<0 ou ln>colunas){		
+						se(linha<0 ou linha > 11){		
 							escreva("\nInforme as coordenadas corretamente [Linha entre 0 e 10] e [Coluna ente 0 e 4]\n")
 						}
 						senao {
@@ -172,7 +172,7 @@ limpa()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2392; 
+ * @POSICAO-CURSOR = 2950; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
